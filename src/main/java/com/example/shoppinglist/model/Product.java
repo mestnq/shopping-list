@@ -12,7 +12,7 @@ import java.io.Serializable;
 public class Product implements Serializable {
     @Id
     @GeneratedValue
-    private Long id;
+    private int id;
     private String name;
     private boolean bought;
     
@@ -23,7 +23,7 @@ public class Product implements Serializable {
         this.name = form.getName();
     }
     
-    public Long getId() {
+    public int getId() {
         return id;
     }
     
